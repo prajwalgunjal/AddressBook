@@ -246,7 +246,7 @@ public class AddressBook {
         else if(takeip==3){
             edit();
         } else if (takeip==4) {
-            //delete
+            Delete();
         } else {
             System.exit(0);
         }
