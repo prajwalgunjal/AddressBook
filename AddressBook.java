@@ -163,7 +163,22 @@ public class AddressBook {
         System.out.println("Email is "+StoreEmail[sr]);
         ask();
     }
-
+    public static void Delete(){
+        ////// enter 1 for the 1st person as a sr
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENter sr the number of the contact which you want to delete");
+        int sr = sc.nextInt();
+        StoreFirstName[sr]=" ";
+        StoreLastName[sr]=" ";
+        StorePhoneNumber[sr]=0;
+        StoreAddress[sr]=" ";
+        StoreState[sr]=" ";
+        StoreCity[sr]=" ";
+        StoreZip[sr]=0;
+        StoreEmail[sr]=" ";
+        System.out.println("Contatc deleted!!!!!");
+        ask();
+    }
     public static void edit(){
         // enter 1 to edit 1st person as a sr no enter 2 to edit 2nd person
         Scanner sc = new Scanner(System.in);
